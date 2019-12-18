@@ -1,3 +1,8 @@
 <p>post-create works!</p>
-<textarea rows="6"></textarea>
-<button (click)="onAddPost()">Save Post</button>
+<!-- 2 way binding -->
+<textarea rows="6" [(ngModel)]="enteredValue"></textarea>
+<!-- event binding -->
+<button (click)="onAddPost(postInput)">Save Post</button>
+<!-- string intrepolation -->
+<p>{{ newPost }}</p>
+
