@@ -1,8 +1,14 @@
 <p>post-create works!</p>
-<!-- 2 way binding -->
-<textarea rows="6" [(ngModel)]="enteredValue"></textarea>
-<!-- event binding -->
-<button (click)="onAddPost(postInput)">Save Post</button>
+<mat-card>
+  <mat-form-field>
+    <!-- 2 way binding -->
+      <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+    </mat-form-field>
+  <!-- event binding -->
+  <button mat-raised-button (click)="onAddPost(postInput)">Save Post</button>
+</mat-card>
+
+
 <!-- string intrepolation -->
 <p>{{ newPost }}</p>
 
